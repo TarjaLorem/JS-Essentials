@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'DoHyeon-Regular';
+    src: url(../fonts/DoHyeon-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: 'Righteous-Regular';
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+   background: #E9E3D7; 
+}
+a {
+    text-decoration: none;
+}
+.header {
+    width: 100%;
+    background: #AFA797; 
+}
+.short-header {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 10px;
+}
+.short-header_logo {
+    font-family: DoHyeon-Regular;
+    font-size: 45px;
+    line-height: 70px;
+    color: #2E2C2C;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+.main-title {
+    max-width: 1035px;
+    margin: 80px auto 0;
+    text-align: center;
+}
+.main-title_description {
+    font-family: Nunito-Regular;
+    font-size: 27px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #2E2D2B;
+}
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 0 50px; 
+}
+.nav-link {
+    text-decoration: none;
+}
+.nav {
+    width: 180px; 
+    height: 180px;
+    box-shadow: #8E8E8E 0px 0px 40px 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255,255,215,0.2);
+    transition: all 0.2s ease-in-out;
+}
+.nav:hover {
+   box-shadow: #737373 0px 10px 30px 1px; 
+}
+.nav-background:hover {
+  transform: translateY(-10px);
+}
+.nav-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;  
+}
+.first-background {
+    background-image: url(../images/haha.png);
+}
+.second-background {
+    background-image: url(../images/easy.png);
+}
+.third-background {
+    background-image: url(../images/medium.png);
+}
+.fouth-background {
+    background-image: url(../images/hard.png);
+}
+.fifth-background {
+    background-image: url(../images/superHard.png);
+}
+.nav-title {
+    font-family: Righteous-Regular;
+    font-weight: 700;
+    font-size: 30px;
+    color: #1F1F1F;
+    text-transform: uppercase;
+}
+.button {
+    font-family: Nunito-Bold; 
+    font-size: 25px;
+	color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+    transition: all 0.1s;  
+}
+.default-title {
+    max-width: 900px;
+    color: #283F4E;
+    text-align: left;
+    margin: 100px 0;
+}
+.default-title_description {
+    font-family: Nunito-Bold; 
+    font-size: 25px;
+}
+.haha-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.haha-button {
+    background: #3498DB;
+    margin: 0px 10px 10px 0px;
+}
+.haha-button:hover {
+    background: #387DAB;
+}
+.easy-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.easy-button {
+    background: #30A42D;
+    margin-right: 35px;
+}
+.easy-button:hover {
+    background: #247721;
+}
+.medium-nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.medium-button {
+    background: #F3743E;
+    margin: 0 35px 35px 0;
+}
+.medium-button:hover {
+    background: #D25823;
+}
+.hard-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.hard-button {
+    background: #EC2B25;
+    margin-right: 35px;
+}
+.hard-button:hover {
+    background: #BC0C06;
+}
+.super-hard-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.super-hard-button {
+    background: #216C77;
+}
+.super-hard-button:hover {
+    background: #185058;
+}
+.back-button {
+    font-family: Nunito-Bold; 
+    font-size: 25px;
+	color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+    transition: all 0.1s;
+    background: #6F7879;
+}
+.back-button:hover {
+    background: #5A6162;
+}
