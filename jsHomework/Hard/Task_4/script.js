@@ -1,11 +1,8 @@
-var arr = [2,2,2,67,54,54,-5,"a","a" ];
+var arr = [2,2,2,6,6,6,67,54,54,-5,"a","a" ];
 
-var sort = arr.sort();
-var result = [];
-for (var i = 0; i < sort.length; i++) {
-    if (sort[i] === sort[i + 1]) {
-        result.push(arr[i]);
-    };
-};
+var duplicates = input.reduce(function (acc, elem, index, arr) {
+    if (arr.indexOf(elem) !== index && acc.indexOf(elem) < 0) acc.push(elem);
+    return acc;
+}, []); // without loop
 
-console.log(result.join());
+console.log(duplicates);

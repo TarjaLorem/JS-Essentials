@@ -1,6 +1,6 @@
 var getRandom = function (a, b) {
-   var a = Math.floor(Math.random() * b);
-    return a;
+    var res = Math.floor(Math.random() * (max - min + 1) + min);
+    return res;
 };
 
 console.log(getRandom(1, 20));

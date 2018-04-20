@@ -1,5 +1,5 @@
 var i;
-var array = [1,4,2],
+var array = [1, 4, 2],
     len = array.length;
 
 var average = function () {
@@ -10,6 +10,8 @@ var average = function () {
 
     var result = sum / len;
     console.log(result);
+    var resRand = parseFloat(result.toFixed(2))
+    console.log(resRand);
 };
 
 average();

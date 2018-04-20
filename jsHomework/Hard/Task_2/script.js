@@ -3,17 +3,17 @@ var list = {
     surname: "Ulyanova"
 };
 
-var valid = function (obj) {
-    for (var key in obj) {
-        return true;
-    };
-    return false;
-};
-console.log((valid(list.name))); //true
-console.log((valid(list.age))) // false
-
-try {
-    valid(list.name);
-} catch (err) {
-    console.log(err)
+function valid(array, obj) {
+    resArr = [];
+    for (var key in list) {
+        resArr.push(key);
+    }
+    return array.length == resArr.length && array.every((value, index) => value === resArr[index]);
 }
+
+var arr = ["name", "surname"];
+console.log(valid(arr, list));
+
+var arr = ["name", "surname", "age"];
+console.log(valid(arr, list));
+
